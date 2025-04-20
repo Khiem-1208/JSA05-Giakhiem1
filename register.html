@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="./styles/auth.css" />
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <h2>Đăng ký</h2>
+      <form action="#">
+        <div class="form-control">
+          <input id="username" type="text" required />
+          <label>Tên người dùng</label>
+        </div>
+        <div class="form-control">
+          <input id="email" type="text" required />
+          <label>Địa chỉ Email</label>
+        </div>
+        <div class="form-control">
+          <input id="password" type="password" required />
+          <label>Mật khẩu</label>
+        </div>
+        <button type="submit">Đăng ký</button>
+        <div class="form-help">
+          <div class="remember-me">
+            <input type="checkbox" id="remember-me" />
+            <label for="remember-me">Nhớ tôi</label>
+          </div>
+          <a href="#">Cần giúp đỡ?</a>
+        </div>
+      </form>
+      <p>Đã có tài khoản? <a href="./login.html">Đăng nhập ngay</a></p>
+    </div>
+
+    <script src="./scripts/register.js"></script>
+  </body>
+</html>
