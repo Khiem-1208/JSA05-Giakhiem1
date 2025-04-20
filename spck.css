@@ -1,0 +1,146 @@
+:root {
+    --bg: #121212;
+    --text: #e0e0e0;
+    --subtext: #b0b0b0;
+    --accent: #c49a6c;
+    --card: #1e1e1e;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0e0e0e;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: var(--accent);
+  }
+  
+  nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: var(--subtext);
+    transition: color 0.2s;
+  }
+  nav a:hover {
+    color: var(--accent);
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: url('https://source.unsplash.com/1600x600/?coffee,dark') center/cover no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .hero input {
+    padding: 0.8rem;
+    width: 60%;
+    max-width: 400px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #1e1e1e;
+    color: var(--text);
+  }
+  
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+  .category {
+    padding: 0.8rem 1.2rem;
+    background: var(--card);
+    border-radius: 12px;
+    color: var(--accent);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .category:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(196, 154, 108, 0.2);
+  }
+  
+  .reviews {
+    padding: 2rem 1rem;
+  }
+  .reviews h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .review-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .review-card {
+    background: var(--card);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  .review-card:hover {
+    transform: translateY(-5px);
+  }
+  .review-card img {
+    width: 200px;
+    height: 500px;
+    object-fit: cover;
+  }
+  .review-card h3 {
+    margin: 1rem;
+    color: var(--accent);
+  }
+  .review-card p {
+    margin: 0 1rem 0.5rem;
+    color: var(--subtext);
+  }
+  .review-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 1rem;
+  }
+  
+  .tags {
+    margin: 0 1rem 1rem;
+    font-size: 0.85rem;
+    color: var(--accent);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #0e0e0e;
+    color: var(--subtext);
+  }
+  .socials a {
+    margin: 0 0.5rem;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .socials a:hover {
+    text-decoration: underline;
+  }
+  
